@@ -58,8 +58,16 @@ Sau khi thiết lập xong Proxy cho cả Owasp Zap và Browser. Ta có thể tr
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa7.png)
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa8.png)
 Nếu thiết lập đúng , phía bên trái phần Sites của Owaps Zap sẽ hiển thị URL của trang Web mà mình vừa truy cập. Đến đây thì bước chuẩn bị cho việc Scan Injection kết thúc.
-Owasp Zap có 4 chế độ quét , khi khởi động nó được set chế độ mặc định là Standard, do đó ta cần phải chuyển sang chế độ Protected Mode.
-Lý do trọn chế độ Protected là vì, nếu trọn chế độ mặc định Standard hay là chế độ Attack thì có khả năng là nó sẽ tấn công vào các trang Web mà mình không quản lý được. Ngược lại nếu trọn chế độ Safe thì nó lại không scan được hết hoàn toàn các lỗ hổng , do đó ta trọn chế đô protected.
+Owasp Zap có 4 chế độ quét:
+1.Safe Mode
+Sẽ chỉ hiển thị và phát hiện những đường dẫn mà người dùng thao tác và cấm mọi hành động scan có thể gây nguy hiểm
+2.Protected Mode
+Chỉ cho phép scan đối với những URL được xác định trong phạm vi (là tập hợp những URL đã được thêm vào context và sẽ thực hiện theo những cài đặt mà người dùng định nghĩa)
+3.Standard Mode
+Là mode tấn công thông thường có thể scan ở mode này mà không cần phải bắt buộc khai báo trong context
+4.Ở mode này thì OZ sẽ thực hiện active scanning cho mọi url mà nó phát hiện khi người dùng thao tác trên trình duyệt.<br/>
+Khi khởi động nó được set chế độ mặc định là Standard, do đó ta cần phải chuyển sang chế độ Protected Mode.
+Lý do chọn chế độ Protected là vì, nếu chọn chế độ mặc định Standard hay là chế độ Attack thì có khả năng là nó sẽ tấn công vào các trang Web mà mình không quản lý được. Ngược lại nếu trọn chế độ Safe thì nó lại không scan được hết hoàn toàn các lỗ hổng.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa9.png)
 Một số thông tin:
 * Một cảnh báo (alert) là một lỗ hổng tiềm năng và được liên kết với 1 request cụ
@@ -95,4 +103,5 @@ Sau khi Scan xong bạn có thể xuất file report cho kết quả vừa Scan.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa17.png)
 
 Tài liệu tham khảo
-link [https://blog.vietnamlab.vn/2018/08/08/owasp-zap-de-test-security-cho-web-application-va-api/]
+link [https://blog.vietnamlab.vn/2018/08/08/owasp-zap-de-test-security-cho-web-application-va-api/]<br/>
+link [https://vdodata.vn/huong-dan-su-dung-owasp-zap-cong-cu-quet-lo-hong-bao-mat/]
