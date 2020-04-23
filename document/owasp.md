@@ -49,8 +49,8 @@ Cài đặt Add-on SwitchyOmega. Add-on này sẽ giúp  ON OFF việc chuyển 
 Chọn New profile và điền những thông tin cần thiết , chú ý là chỗ Proxy servers
 phải thiết lập cùng Address và cùng Port đã được thiết lập ở phía Owasp Zap. Thiết lập này sẽ giúp cho Owasp Zap bắt được những truy cập mà ta đang truy cập phía Browser.
 Sau khi thiết lập xong , nút Apply changes sẽ sáng lên, click vào để lưu thiết lập.
-Ok, Ta đã thiết lập xong Proxy cho Browser , nhìn lên góc phải browser ta sẽ thấy icon hình tròn. Click vào cái profile  vừa thiết lập  để ON và Click vào System Proxy để vô hiệu hóa thiết lập.
-![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa6.png)
+Ok, Ta đã thiết lập xong Proxy cho Browser , nhìn lên góc phải browser ta sẽ thấy icon hình tròn. Click vào cái profile  vừa thiết lập  để ON và Click vào System Proxy để vô hiệu hóa thiết lập.<br/>
+![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa6.png)<br/>
 Vậy là bước này đã xong , bây giờ ta đã có thể ON OFF để chuyển đổi proxy 1 cách dễ dàng.
 
 ### Truy cập vào ứng dụng Web mà ta muốn test
