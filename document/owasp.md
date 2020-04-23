@@ -3,7 +3,7 @@
 ---
 ## Khái niệm và chức năng của Owasp Zap
 
-> Owasp Zap – The Open Web Application Security Project được hiểu là dự án mở về bảo mật ứng dụng web. Đây là một dự án được cả cộng đồng chung tay tham gia, giúp các tổ chức có thể phát triển mở hoặc bảo trì các ứng dụng ở trạng thái an toàn. Chúng được người dùng biết đến nhiều nhất với tính năng quét lỗi bảo mật của ứng dụng web, mã nguồn mở. Bạn sẽ tìm thấy nhiều tính năng tuyệt vời ở Owasp Zap bao gồm cả miễn phí và trả phí như:
+> Owasp Zap – The Open Web Application Security Project được hiểu là dự án mở về bảo mật ứng dụng web. Đây là một dự án được cả cộng đồng chung tay tham gia, giúp các tổ chức có thể phát triển mở hoặc bảo trì các ứng dụng ở trạng thái an toàn. Chúng được người dùng biết đến nhiều nhất với tính năng quét lỗi bảo mật của ứng dụng web, mã nguồn mở. Bạn sẽ tìm thấy nhiều tính năng tuyệt vời ở Owasp Zap bao gồm cả miễn phí và trả phí như:<br />
 1.Là mã nguồn mở.
 2.Các công cụ đạt chuẩn về an toàn thông ton
 3.Thực hiện chính sách kiểm tra về bảo mật, an toàn cho mã nguồn
