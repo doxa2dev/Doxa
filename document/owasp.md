@@ -26,11 +26,9 @@
 9.Giả mạo yêu cầu.<br/>
 10.Bị tấn công khi sử dụng các thành phần với những lỗ hổng bảo mật.<br/>
 11.Chuyển hướng không an toàn.<br/>
-
 ----
 ## Các bước cài đặt Owasp Zap
 ### Điều kiện
----
 Owasp Zap chạy bằng Java chính vì vậy ta cần phải cài đặt JRE. Nếu bạn chưa cài JRE thì có thể vào Web Site Oracle download và cặt đặt.
 ### Download cài đặt
 B1. Truy cập vào link: https://www.zaproxy.org/download/ và lựa chọn phiên bản
