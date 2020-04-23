@@ -3,7 +3,7 @@
 ---
 ## Khái niệm và chức năng của Owasp Zap
 
-> Owasp Zap – The Open Web Application Security Project được hiểu là dự án mở về bảo mật ứng dụng web. Đây là một dự án được cả cộng đồng chung tay tham gia, giúp các tổ chức có thể phát triển mở hoặc bảo trì các ứng dụng ở trạng thái an toàn. Chúng được người dùng biết đến nhiều nhất với tính năng quét lỗi bảo mật của ứng dụng web, mã nguồn mở. Bạn sẽ tìm thấy nhiều tính năng tuyệt vời ở Owasp Zap bao gồm cả miễn phí và trả phí như:<br/>
+> Owasp Zap – The Open Web Application Security Project được hiểu là dự án mở về bảo mật ứng dụng web. Đây là một dự án được cả cộng đồng chung tay tham gia, giúp các tổ chức có thể phát triển mở hoặc bảo trì các ứng dụng ở trạng thái an toàn. Chúng được người dùng biết đến nhiều nhất với tính năng quét lỗi bảo mật của ứng dụng web, mã nguồn mở. Bạn sẽ tìm thấy nhiều tính năng tuyệt vời ở Owasp Zap bao gồm cả miễn phí và trả phí:<br/>
 1.Là mã nguồn mở.<br/>
 2.Các công cụ đạt chuẩn về an toàn thông tin.<br/>
 3.Thực hiện chính sách kiểm tra về bảo mật, an toàn cho mã nguồn.<br/>
@@ -17,7 +17,7 @@
 11.Được phát triển bởi các chuyên gia lập trình chuyên nghiệp.<br/>
 Ngoài ra, Owasp Zap cũng đưa ra 10 rủi ro mà bạn có thể gặp phải:<br/>
 1.Khả năng bị tiêm nhiễm mã độc.<br/>
-2.Tính san lầm trong việc kiểm tra định danh cũng như các phiên làm việc.<br/>
+2.Tính sai lầm trong việc kiểm tra định danh cũng như các phiên làm việc.<br/>
 3.Thực thi mã Scrip xấu.<br/>
 4.Đối tượng tham chiếu không được an toàn tuyệt đối.<br/>
 5.Cấu hình an ninh có thể bị sai.<br/>
@@ -49,7 +49,7 @@ Cài đặt Add-on SwitchyOmega. Add-on này sẽ giúp  ON OFF việc chuyển 
 Chọn New profile và điền những thông tin cần thiết , chú ý là chỗ Proxy servers
 phải thiết lập cùng Address và cùng Port đã được thiết lập ở phía Owasp Zap. Thiết lập này sẽ giúp cho Owasp Zap bắt được những truy cập mà ta đang truy cập phía Browser.
 Sau khi thiết lập xong , nút Apply changes sẽ sáng lên, click vào để lưu thiết lập.
-Ok, Ta đã thiết lâp xong Proxy cho Browser , nhìn lên góc phải browser ta sẽ thấy icon hình tròn. Click vào cái profile  vừa thiết lập  để ON và Click vào System Proxy để vô hiệu hóa thiết lập.
+Ok, Ta đã thiết lập xong Proxy cho Browser , nhìn lên góc phải browser ta sẽ thấy icon hình tròn. Click vào cái profile  vừa thiết lập  để ON và Click vào System Proxy để vô hiệu hóa thiết lập.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa6.png)
 Vậy là bước này đã xong , bây giờ ta đã có thể ON OFF để chuyển đổi proxy 1 cách dễ dàng.
 
@@ -61,7 +61,7 @@ Nếu thiết lập đúng , phía bên trái phần Sites của Owaps Zap sẽ 
 Owasp Zap có 4 chế độ quét , khi khởi động nó được set chế độ mặc định là Standard, do đó ta cần phải chuyển sang chế độ Protected Mode.
 Lý do trọn chế độ Protected là vì, nếu trọn chế độ mặc định Standard hay là chế độ Attack thì có khả năng là nó sẽ tấn công vào các trang Web mà mình không quản lý được. Ngược lại nếu trọn chế độ Safe thì nó lại không scan được hết hoàn toàn các lỗ hổng , do đó ta trọn chế đô protected.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa9.png)
-Một số thông tin
+Một số thông tin:
 * Một cảnh báo (alert) là một lỗ hổng tiềm năng và được liên kết với 1 request cụ
 thể. Một request có thể có nhiều hơn 1 cảnh báo. 1 cảnh báo được hiển thị trong giao
 diện người dùng với hình cờ cho biết mức độ rủi ro. (High – Mức độ dễ bị tấn công)
@@ -74,7 +74,7 @@ diện người dùng với hình cờ cho biết mức độ rủi ro. (High �
 ### Tiến hành Test
 Click chuột phải vào link URL ở bên phía tab Sites, ta sẽ thấy mục Attack nhưng không kích hoạt được vì chưa Include in Context.
 * Include in Context
-* Để thực hiện kiểm tra thâm nhập ở chế độ Protected, bạn cần include URL cần được kiểm tra trong Context.
+* Để thực hiện kiểm tra thâm nhập ở chế độ Protected, ta cần include URL cần được kiểm tra trong Context.
 * ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa11.png)
 * Chọn vào URL và nhấn OK để được include vào trong context. Khi nó được include vào trong context, 1 vòng tròn màu đỏ được hiển thị trong các icon của URL như hình bên dưới.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa12.png)
@@ -95,4 +95,4 @@ Sau khi Scan xong bạn có thể xuất file report cho kết quả vừa Scan.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa17.png)
 
 Tài liệu tham khảo
-link [https://blog.vietnamlab.vn/2018/08/08/owasp-zap-de-test-security-cho-web-application-va-api/)
+link [https://blog.vietnamlab.vn/2018/08/08/owasp-zap-de-test-security-cho-web-application-va-api/]
