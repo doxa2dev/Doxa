@@ -104,6 +104,6 @@ Bạn có thể lưu những thiết lập ở trên bằng cách. Nhập tên v
 Sau khi Scan xong bạn có thể xuất file report cho kết quả vừa Scan. Có nhiều định dạng file report cho bạn lựa trọn như HTML, XML hay Markdown.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa17.png)
 
-Tài liệu tham khảo
+Tài liệu tham khảo <br/>
 link [https://blog.vietnamlab.vn/2018/08/08/owasp-zap-de-test-security-cho-web-application-va-api/]<br/>
 link [https://vdodata.vn/huong-dan-su-dung-owasp-zap-cong-cu-quet-lo-hong-bao-mat/]
