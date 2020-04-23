@@ -88,13 +88,15 @@ Click chuột phải vào link URL ở bên phía tab Sites, ta sẽ thấy mụ
 * ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa11.png)
 * Chọn vào URL và nhấn OK để được include vào trong context. Khi nó được include vào trong context, 1 vòng tròn màu đỏ được hiển thị trong các icon của URL như hình bên dưới.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa12.png)
-Bây giờ chúng ta đã có thể thực hiện các cuộc tấn công như quét động.
-※　Khi thực hiện kiểm tra thâm nhập với OWASP ZAP, vui lòng chỉ đến trang web được quản lý bởi chính bạn trong môi trường cục bộ. Nếu nó được thực hiện cho một máy chủ được quản lý bởi một bên thứ ba được xuất bản trên Internet, nó có thể được coi là một truy cập trái phép.
-Thực hiện test api login
+Bây giờ chúng ta đã có thể thực hiện các cuộc tấn công như quét động.<br/>
+※　Khi thực hiện kiểm tra thâm nhập với OWASP ZAP, vui lòng chỉ đến trang web được quản lý bởi chính bạn trong môi trường cục bộ. <br/>
+Nếu nó được thực hiện cho một máy chủ được quản lý bởi một bên thứ ba được xuất bản trên Internet, nó có thể được coi là một truy cập trái phép.<br/>
+Thực hiện test api login<br/>
 * ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa13.png)
 * ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa14.png)
-Nếu có một lỗ hổng sau khi quét xong, nó sẽ được hiển thị trong Alert
-Trong tab Active Scan, click vào 1 dòng bất kỳ , ta sẽ thấy được Owasp Zap đã giả lập request để tấn công và tìm lỗ hổng trong ứng dụng của bạn .Trong tab Request và Response ở phía trên sẽ hiển thị rõ những thông tin giả lập đó.
+Nếu có một lỗ hổng sau khi quét xong, nó sẽ được hiển thị trong Alert<br/>
+Trong tab Active Scan, click vào 1 dòng bất kỳ , ta sẽ thấy được Owasp Zap đã giả lập request để tấn công và tìm lỗ hổng trong ứng dụng của bạn .<br/>
+Trong tab Request và Response ở phía trên sẽ hiển thị rõ những thông tin giả lập đó.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa15.png)
 Owasp Zap đã làm giả các request và tìm ra lỗ hổng của ứng dụng.
 ### Lưu Session và xuất file Report
