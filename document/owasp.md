@@ -27,7 +27,6 @@
 10.Bị tấn công khi sử dụng các thành phần với những lỗ hổng bảo mật.<br/>
 11.Chuyển hướng không an toàn.<br/>
 
-## Hướng dẫn sử dụng Owasp Zap
 ----
 ## Các bước cài đặt Owasp Zap
 ### Điều kiện
