@@ -85,13 +85,33 @@ diện người dùng với hình cờ cho biết mức độ rủi ro. (High �
 Click chuột phải vào link URL ở bên phía tab Sites, ta sẽ thấy mục Attack nhưng không kích hoạt được vì chưa Include in Context.
 * Include in Context
 * Để thực hiện kiểm tra thâm nhập ở chế độ Protected, ta cần include URL cần được kiểm tra trong Context.
-* ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa11.png)
+![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa11.png)<br/>
+Những mục trong context setting bao gồm :
+– Include in Context
+   là những địa chỉ sẽ được scan
+– Exclude in Context
+  là những địa chỉ sẽ không được scan
+– Structure
+  định nghĩa cấu trúc của 1 URL khi truyền parameter
+– Technology
+là những ngôn ngữ lập trình hoặc công nghệ được sử dụng trong project. Tránh chọn all để cải     thiện tốc độ scan
+– Authentication
+lựa chọn phương thức bảo mật của web đang sử dụng
+– Users
+tạo user đăng nhập vào trang web muốn scan. Nội dung sẽ phụ thuộc vào phần authentication
+– Forced User
+– Session Management
+  phương thức quản lý session của dự án
+– Authoziation
+-Alert Filters
+  lọc ra những thông báo theo điều kiện đề ra
 * Chọn vào URL và nhấn OK để được include vào trong context. Khi nó được include vào trong context, 1 vòng tròn màu đỏ được hiển thị trong các icon của URL như hình bên dưới.<br/>
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa19.png)<br/>
 Bây giờ chúng ta đã có thể thực hiện các cuộc tấn công như quét động.
 ※　Khi thực hiện kiểm tra thâm nhập với OWASP ZAP, vui lòng chỉ đến trang web được quản lý bởi chính bạn trong môi trường cục bộ. <br/>
 Nếu nó được thực hiện cho một máy chủ được quản lý bởi một bên thứ ba được xuất bản trên Internet, nó có thể được coi là một truy cập trái phép.<br/>
 Thực hiện test api login<br/>
+### 1. Active scan
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa13.png)
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa14.png)
 Nếu có một lỗ hổng sau khi quét xong, nó sẽ được hiển thị trong Alert<br/>
@@ -99,6 +119,11 @@ Trong tab Active Scan, click vào 1 dòng bất kỳ , ta sẽ thấy được O
 Trong tab Request và Response ở phía trên sẽ hiển thị rõ những thông tin giả lập đó.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa15.png)
 Owasp Zap đã làm giả các request và tìm ra lỗ hổng của ứng dụng.
+### 2. Spider scan
+Ở chế độ scan này, OZ sẽ tìm tất cả những link ẩn trong dự án mà người dùng chưa thao tác tới . cách thức tấn công spider sẽ bắt đầu đi từ những trang có sẵn gọi là các seeds và dựa vào những trang đó tìm kiếm những hyperlink ở trong trang và thêm chúng vào list (sites trong OZ).
+![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa22.png)
+### 3. Ajax spider
+Áp dụng cho những dự án sử dụng ajax. Mục đích sử dụng giống như spider là để tìm kiếm link bằng cách giả lập thao tác trên màn hình. Từ đó sẽ tìm được link chuyển tiếp mà n mà spider thông thường không thể làm được.
 ### Lưu Session và xuất file Report
 Bạn có thể lưu những thiết lập ở trên bằng cách. Nhập tên và chỗ cần lưu và nhấn OK là xong.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa20.png)
