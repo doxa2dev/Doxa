@@ -35,18 +35,15 @@ B1. Truy cập vào link: https://www.zaproxy.org/download/ và lựa chọn phi
 phù hợp với hệ điều hành đang dùng. Sau đó tiến hành download và cài đặt thông
 thường.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa1.png)
-
 Sau khi cài đặt xong ta khởi động ứng dụng và sẽ có giao diện như hình bên dưới:
-![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa2.png).
-
-Thiết lập Local Proxy
-* OWASP ZAP có chức năng proxy cục bộ, cho phép OWASP ZAP hoạt động như một proxy cục bộ.
+![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa2.png)
+### Thiết lập Local Proxy
+OWASP ZAP có chức năng proxy cục bộ, cho phép OWASP ZAP hoạt động như một proxy cục bộ.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa3.png)
 Chọn Tools -> Options màn hình sau sẽ xuất hiện.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa4.png)
 Ta sẽ thiết lập Address và Port . Mặc đinh sẽ là localhost:8080. Trường hợp mà có ứng dụng nào khác đã chiếm dụng port 8080 thì ta có thể đổi 1 port khác tùy ý, rồi nhấn OK để lưu thiết lập.
-
-* Thiết lập bên phía Browser (Google chorme)
+### Thiết lập bên phía Browser (Google chorme)
 Hầu hết các hướng dẫn thiết lập đều internet đều hướng dẫn thiết lập với FireFox. Nhưng trong bài viết này mình sẽ hướng dẫn thiết lập với Google Chorme, mục đích là để mình sử dụng được Add-on Postman của Google chorme để test API (sẽ trình bày sau).
 Việc cần làm là bạn cài Add-on SwitchyOmega. Add-on này sẽ giúp bạn ON OFF việc chuyển đổi proxy 1 cách dễ dàng.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa5.png)
@@ -77,9 +74,8 @@ diện người dùng với hình cờ cho biết mức độ rủi ro. (High �
 * Fuzz : gửi những data không hợp lệ, không mong muốn
 * Forced Browes : cho phép khám phá các thư mục và tệp
 
-### Thử tiến hành Test
+### Tiến hành Test
 Click chuột phải vào link URL ở bên phía tab Sites, ta sẽ thấy mục Attack nhưng không kích hoạt được vì chưa Include in Context.
-
 * Include in Context
 * Để thực hiện kiểm tra thâm nhập ở chế độ Protected, bạn cần include URL cần được kiểm tra trong Context.
 * ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa11.png)
