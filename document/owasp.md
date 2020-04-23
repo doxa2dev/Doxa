@@ -101,10 +101,10 @@ Trong tab Request và Response ở phía trên sẽ hiển thị rõ những th�
 Owasp Zap đã làm giả các request và tìm ra lỗ hổng của ứng dụng.
 ### Lưu Session và xuất file Report
 Bạn có thể lưu những thiết lập ở trên bằng cách. Nhập tên và chỗ cần lưu và nhấn OK là xong.
-![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa16.png)
+![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa20.png)
 ### Tạo Report
 Sau khi Scan xong bạn có thể xuất file report cho kết quả vừa Scan. Có nhiều định dạng file report cho bạn lựa trọn như HTML, XML hay Markdown.
-![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa17.png)
+![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa21.png)
 
 Tài liệu tham khảo <br/>
 link [https://blog.vietnamlab.vn/2018/08/08/owasp-zap-de-test-security-cho-web-application-va-api/]<br/>
