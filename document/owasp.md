@@ -15,17 +15,17 @@
 9.Tự động cập nhật nhiều tính năng cho người dùng.<br/>
 10.Là công cụ được nhiều người dùng tham gia sử dụng, tạo thành một cộng đồng nhiều thành viên.<br/>
 11.Được phát triển bởi các chuyên gia lập trình chuyên nghiệp.<br/>
-1.Ngoài ra, Owasp Zap cũng đưa ra 10 rủi ro mà bạn có thể gặp phải.<br/>
-2.Khả năng bị tiêm nhiễm mã độc.<br/>
-3.Tính san lầm trong việc kiểm tra định danh cũng như các phiên làm việc.<br/>
-4.Thực thi mã Scrip xấu.<br/>
-5.Đối tượng tham chiếu không được an toàn tuyệt đối.<br/>
-6.Cấu hình an ninh có thể bị sai.<br/>
-7.Có thể bị lộ cấu hình nhạy cảm.<br/>
-8.Đôi khi còn bị mất kiểm soát mức độ truy cập chức năng.<br/>
-9.Giả mạo yêu cầu.<br/>
-10.Bị tấn công khi sử dụng các thành phần với những lỗ hổng bảo mật.<br/>
-11.Chuyển hướng không an toàn.<br/>
+Ngoài ra, Owasp Zap cũng đưa ra 10 rủi ro mà bạn có thể gặp phải:<br/>
+1.Khả năng bị tiêm nhiễm mã độc.<br/>
+2.Tính san lầm trong việc kiểm tra định danh cũng như các phiên làm việc.<br/>
+3.Thực thi mã Scrip xấu.<br/>
+4.Đối tượng tham chiếu không được an toàn tuyệt đối.<br/>
+5.Cấu hình an ninh có thể bị sai.<br/>
+6.Có thể bị lộ cấu hình nhạy cảm.<br/>
+7.Đôi khi còn bị mất kiểm soát mức độ truy cập chức năng.<br/>
+8.Giả mạo yêu cầu.<br/>
+9.Bị tấn công khi sử dụng các thành phần với những lỗ hổng bảo mật.<br/>
+10.Chuyển hướng không an toàn.<br/>
 ----
 ## Các bước cài đặt Owasp Zap
 ### Điều kiện
