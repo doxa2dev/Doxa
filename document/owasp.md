@@ -44,19 +44,17 @@ Chọn Tools -> Options màn hình sau sẽ xuất hiện.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa4.png)
 Ta sẽ thiết lập Address và Port . Mặc đinh sẽ là localhost:8080. Trường hợp mà có ứng dụng nào khác đã chiếm dụng port 8080 thì ta có thể đổi 1 port khác tùy ý, rồi nhấn OK để lưu thiết lập.
 ### Thiết lập bên phía Browser (Google chorme)
-Hầu hết các hướng dẫn thiết lập đều internet đều hướng dẫn thiết lập với FireFox. Nhưng trong bài viết này mình sẽ hướng dẫn thiết lập với Google Chorme, mục đích là để mình sử dụng được Add-on Postman của Google chorme để test API (sẽ trình bày sau).
-Việc cần làm là bạn cài Add-on SwitchyOmega. Add-on này sẽ giúp bạn ON OFF việc chuyển đổi proxy 1 cách dễ dàng.
+Cài đặt Add-on SwitchyOmega. Add-on này sẽ giúp  ON OFF việc chuyển đổi proxy 1 cách dễ dàng.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa5.png)
-Bạn chọn New profile và điền những thông tin cần thiết , chú ý là chỗ Proxy servers bạn phải thiết lập cùng Address và cùng Port đã được thiết lập ở phía Owasp Zap. Thiết lập này sẽ giúp cho Owasp Zap bắt được những truy cập mà bạn đang truy cập phía Browser.
-
+Chọn New profile và điền những thông tin cần thiết , chú ý là chỗ Proxy servers
+phải thiết lập cùng Address và cùng Port đã được thiết lập ở phía Owasp Zap. Thiết lập này sẽ giúp cho Owasp Zap bắt được những truy cập mà ta đang truy cập phía Browser.
 Sau khi thiết lập xong , nút Apply changes sẽ sáng lên, click vào để lưu thiết lập.
-
-Ok, bạn đã thiết lâp xong Proxy cho Browser , nhìn lên góc phải browser bạn sẽ thấy icon hình tròn. Click vào cái profile bạn vừa thiết lập giangpt để ON và Click vào System Proxy để vô hiệu hóa thiết lập.
+Ok, Ta đã thiết lâp xong Proxy cho Browser , nhìn lên góc phải browser ta sẽ thấy icon hình tròn. Click vào cái profile  vừa thiết lập  để ON và Click vào System Proxy để vô hiệu hóa thiết lập.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa6.png)
-Vậy là bước này đã xong , bây giờ bạn đã có thể ON OFF để chuyển đổi proxy 1 cách dễ dàng.
+Vậy là bước này đã xong , bây giờ ta đã có thể ON OFF để chuyển đổi proxy 1 cách dễ dàng.
 
-### Truy cập vào ứng dụng Web mà bạn muốn test
-Sau khi thiết lập xong Proxy cho cả Owasp Zap và Browser. Bạn có thể truy cập vào ứng dụng Web mà bạn đang phát triển để test
+### Truy cập vào ứng dụng Web mà ta muốn test
+Sau khi thiết lập xong Proxy cho cả Owasp Zap và Browser. Ta có thể truy cập vào ứng dụng Web để test.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa7.png)
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa8.png)
 Nếu thiết lập đúng , phía bên trái phần Sites của Owaps Zap sẽ hiển thị URL của trang Web mà mình vừa truy cập. Đến đây thì bước chuẩn bị cho việc Scan Injection kết thúc.
@@ -64,11 +62,10 @@ Owasp Zap có 4 chế độ quét , khi khởi động nó được set chế đ
 Lý do trọn chế độ Protected là vì, nếu trọn chế độ mặc định Standard hay là chế độ Attack thì có khả năng là nó sẽ tấn công vào các trang Web mà mình không quản lý được. Ngược lại nếu trọn chế độ Safe thì nó lại không scan được hết hoàn toàn các lỗ hổng , do đó ta trọn chế đô protected.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa9.png)
 Một số thông tin
-Một cảnh báo (alert) là một lỗ hổng tiềm năng và được liên kết với 1 request cụ
+* Một cảnh báo (alert) là một lỗ hổng tiềm năng và được liên kết với 1 request cụ
 thể. Một request có thể có nhiều hơn 1 cảnh báo. 1 cảnh báo được hiển thị trong giao
 diện người dùng với hình cờ cho biết mức độ rủi ro. (High – Mức độ dễ bị tấn công)
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa10.png)
-
 * Spiders: sử dụng các AJAX Spiders để scan các AJAX request
 * Active và Passive Scanning: quét lỗ hổng chủ động và bị động
 * Fuzz : gửi những data không hợp lệ, không mong muốn
