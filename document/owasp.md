@@ -132,7 +132,7 @@ Sau khi Scan xong bạn có thể xuất file report cho kết quả vừa Scan.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa21.png)
 
 Tài liệu tham khảo <br/>
-link [https://www.zaproxy.org/getting-started/]
-link [https://vdodata.vn/huong-dan-su-dung-owasp-zap-cong-cu-quet-lo-hong-bao-mat/]
+link [https://www.zaproxy.org/getting-started/]<br/>
+link [https://vdodata.vn/huong-dan-su-dung-owasp-zap-cong-cu-quet-lo-hong-bao-mat/]<br/>
 link [https://blog.vietnamlab.vn/2018/08/08/owasp-zap-de-test-security-cho-web-application-va-api/]<br/>
 
