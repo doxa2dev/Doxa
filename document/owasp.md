@@ -89,6 +89,7 @@ Click chuột phải vào link URL ở bên phía tab Sites, ta sẽ thấy mụ
 * Chọn vào URL và nhấn OK để được include vào trong context. Khi nó được include vào trong context, 1 vòng tròn màu đỏ được hiển thị trong các icon của URL như hình bên dưới.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa12.png)
 Bây giờ chúng ta đã có thể thực hiện các cuộc tấn công như quét động.
+<span style="color: red;">text</span>
 ※　Khi thực hiện kiểm tra thâm nhập với OWASP ZAP, vui lòng chỉ đến trang web được quản lý bởi chính bạn trong môi trường cục bộ. Nếu nó được thực hiện cho một máy chủ được quản lý bởi một bên thứ ba được xuất bản trên Internet, nó có thể được coi là một truy cập trái phép.
 Thực hiện test api login
 * ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa13.png)
