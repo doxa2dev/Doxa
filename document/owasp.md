@@ -3,29 +3,29 @@
 ---
 ## Khái niệm và chức năng của Owasp Zap
 
-> Owasp Zap – The Open Web Application Security Project được hiểu là dự án mở về bảo mật ứng dụng web. Đây là một dự án được cả cộng đồng chung tay tham gia, giúp các tổ chức có thể phát triển mở hoặc bảo trì các ứng dụng ở trạng thái an toàn. Chúng được người dùng biết đến nhiều nhất với tính năng quét lỗi bảo mật của ứng dụng web, mã nguồn mở. Bạn sẽ tìm thấy nhiều tính năng tuyệt vời ở Owasp Zap bao gồm cả miễn phí và trả phí như:<br />
-1.Là mã nguồn mở.
-2.Các công cụ đạt chuẩn về an toàn thông ton
-3.Thực hiện chính sách kiểm tra về bảo mật, an toàn cho mã nguồn
-4.Sử dụng hoàn toàn miễn phí.
-5.Ứng dụng đa nền tảng.
-6.Dễ dàng cài đặt và sử dụng.
-7.Cho phép triển khai sử dụng nhiều ngôn ngữ.
-8.Quét tự dộng
-9.Tự động cập nhật nhiều tính năng cho người dùng
-10.Là công cụ được nhiều người dùng tham gia sử dụng, tạo thành một cộng đồng nhiều thành viên.
-11.Được phát triển bởi các chuyên gia lập trình chuyên nghiệp.
-1.Ngoài ra, Owasp Zap cũng đưa ra 10 rủi ro mà bạn có thể gặp phải
-2.Khả năng bị tiêm nhiễm mã độc.
-3.Tính san lầm trong việc kiểm tra định danh cũng như các phiên làm việc.
-4.Thực thi mã Scrip xấu.
-5.Đối tượng tham chiếu không được an toàn tuyệt đối.
-6.Cấu hình an ninh có thể bị sai.
-7.Có thể bị lộ cấu hình nhạy cảm.
-8.Đôi khi còn bị mất kiểm soát mức độ truy cập chức năng.
-9.Giả mạo yêu cầu.
-10.Bị tấn công khi sử dụng các thành phần với những lỗ hổng bảo mật.
-11.Chuyển hướng không an toàn.
+> Owasp Zap – The Open Web Application Security Project được hiểu là dự án mở về bảo mật ứng dụng web. Đây là một dự án được cả cộng đồng chung tay tham gia, giúp các tổ chức có thể phát triển mở hoặc bảo trì các ứng dụng ở trạng thái an toàn. Chúng được người dùng biết đến nhiều nhất với tính năng quét lỗi bảo mật của ứng dụng web, mã nguồn mở. Bạn sẽ tìm thấy nhiều tính năng tuyệt vời ở Owasp Zap bao gồm cả miễn phí và trả phí như:<br/>
+1.Là mã nguồn mở.<br/>
+2.Các công cụ đạt chuẩn về an toàn thông tin.<br/>
+3.Thực hiện chính sách kiểm tra về bảo mật, an toàn cho mã nguồn.<br/>
+4.Sử dụng hoàn toàn miễn phí.<br/>
+5.Ứng dụng đa nền tảng.<br/>
+6.Dễ dàng cài đặt và sử dụng.<br/>
+7.Cho phép triển khai sử dụng nhiều ngôn ngữ.<br/>
+8.Quét tự động.<br/>
+9.Tự động cập nhật nhiều tính năng cho người dùng.<br/>
+10.Là công cụ được nhiều người dùng tham gia sử dụng, tạo thành một cộng đồng nhiều thành viên.<br/>
+11.Được phát triển bởi các chuyên gia lập trình chuyên nghiệp.<br/>
+1.Ngoài ra, Owasp Zap cũng đưa ra 10 rủi ro mà bạn có thể gặp phải.<br/>
+2.Khả năng bị tiêm nhiễm mã độc.<br/>
+3.Tính san lầm trong việc kiểm tra định danh cũng như các phiên làm việc.<br/>
+4.Thực thi mã Scrip xấu.<br/>
+5.Đối tượng tham chiếu không được an toàn tuyệt đối.<br/>
+6.Cấu hình an ninh có thể bị sai.<br/>
+7.Có thể bị lộ cấu hình nhạy cảm.<br/>
+8.Đôi khi còn bị mất kiểm soát mức độ truy cập chức năng.<br/>
+9.Giả mạo yêu cầu.<br/>
+10.Bị tấn công khi sử dụng các thành phần với những lỗ hổng bảo mật.<br/>
+11.Chuyển hướng không an toàn.<br/>
 
 ## Hướng dẫn sử dụng Owasp Zap
 ----
