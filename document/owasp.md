@@ -35,7 +35,7 @@ B1. Truy cập vào link: https://www.zaproxy.org/download/ và lựa chọn phi
 phù hợp với hệ điều hành đang dùng. Sau đó tiến hành download và cài đặt thông
 thường.
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa1.png)
-Sau khi cài đặt xong ta khởi động ứng dụng và sẽ có giao diện như hình bên dưới:
+Sau khi cài đặt xong ta khởi động ứng dụng và sẽ có giao diện như hình bên dưới:<br/>
 ![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa2.png)
 ### Thiết lập Local Proxy
 OWASP ZAP có chức năng proxy cục bộ, cho phép OWASP ZAP hoạt động như một proxy cục bộ.
