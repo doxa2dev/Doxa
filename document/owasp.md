@@ -45,7 +45,7 @@ Chọn Tools -> Options màn hình sau sẽ xuất hiện.
 Ta sẽ thiết lập Address và Port . Mặc đinh sẽ là localhost:8080. Trường hợp mà có ứng dụng nào khác đã chiếm dụng port 8080 thì ta có thể đổi 1 port khác tùy ý, rồi nhấn OK để lưu thiết lập.
 ### Thiết lập bên phía Browser (Google chorme)
 Cài đặt Add-on SwitchyOmega. Add-on này sẽ giúp  ON OFF việc chuyển đổi proxy 1 cách dễ dàng.
-![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa5.png)
+![](https://gitlab.com/trung-nb/public/-/raw/master/doxa_image/doxa4.png)
 Chọn New profile và điền những thông tin cần thiết , chú ý là chỗ Proxy servers
 phải thiết lập cùng Address và cùng Port đã được thiết lập ở phía Owasp Zap. Thiết lập này sẽ giúp cho Owasp Zap bắt được những truy cập mà ta đang truy cập phía Browser.
 Sau khi thiết lập xong , nút Apply changes sẽ sáng lên, click vào để lưu thiết lập.
