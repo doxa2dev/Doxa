@@ -131,10 +131,10 @@ Click [Add user] để tạo một tài khoản mới
 
 Bước 4: Nhập thông tin tài khoản
 
-– User name: Ở đây mình sử dụng User Name là “doxa1”
-– Access Type: Mọi người chọn “AWS Management Console access”. Chú ý một tài khoản có thể chọn cả 2 loại Access Type.
-– Console Password: Chọn “Custom password” để điền password vào.
-– Require Password reset: Bỏ chọn trường này, nếu các bạn không muốn đổi password ở lần đăng nhập đầu tiên.
+– User name: Ở đây mình sử dụng User Name là “doxa1”<br/>
+– Access Type: Mọi người chọn “AWS Management Console access”. Chú ý một tài khoản có thể chọn cả 2 loại Access Type.<br/>
+– Console Password: Chọn “Custom password” để điền password vào.<br/>
+– Require Password reset: Bỏ chọn trường này, nếu các bạn không muốn đổi password ở lần đăng nhập đầu tiên.<br/>
 
 Click button [Next: Permissions] để tiếp tục
 
@@ -218,15 +218,15 @@ Ta có thể sử dụng Amazon EC2 để khởi tạo 1 hoặc nhiều máy ch�
 
 * Các tính năng của máy chủ Amazon EC2
 
-> 1.Môi trường máy tính ảo hóa, được hiểu là 1 instance
-> 2.Các template được cấu hình sẵn cho instance, được gọi là AMIs (Amazon Machine Images), ít nhiều sẽ cần cho server của bạn, nó bao gồm HDH và các phần mềm bổ sung.
-> 3.Các máy chủ có các cấu hình khác nhau về CPU, bộ nhớ, lưu trữ, lưu lượng mạng gọi là các Instance Types
-> 4.Sử dụng cặp khóa (public key và private key) với mã hóa công khai để bảo mật thông tin đăng nhập
-> 5.Instance store volumens: Lưu trữ data tạm thời, data sẽ bị xóa khi bạn stop hoặc terminate instance
-> 6.Amazon EBS volumes: sử dụng để lưu trữ dữ liệu của bạn
-> 7.Security Group: Một firewall ảo để bạn có thể chỉ ra giao thức, cổng, dải IP nguồn mà có thể tiếp cận tới instance
-> 8.Elastic IP addresses: Địa chỉ IP cố định cho các máy chủ ảo
-> 9.VPCs (Virtual Private Cloud): Đám mây riêng ảo
+> 1.Môi trường máy tính ảo hóa, được hiểu là 1 instance<br/>
+> 2.Các template được cấu hình sẵn cho instance, được gọi là AMIs (Amazon Machine Images), ít nhiều sẽ cần cho server của bạn, nó bao gồm HDH và các phần mềm bổ sung.<br/>
+> 3.Các máy chủ có các cấu hình khác nhau về CPU, bộ nhớ, lưu trữ, lưu lượng mạng gọi là các Instance Types<br/>
+> 4.Sử dụng cặp khóa (public key và private key) với mã hóa công khai để bảo mật thông tin đăng nhập<br/>
+> 5.Instance store volumens: Lưu trữ data tạm thời, data sẽ bị xóa khi bạn stop hoặc terminate instance<br/>
+> 6.Amazon EBS volumes: sử dụng để lưu trữ dữ liệu của bạn<br/>
+> 7.Security Group: Một firewall ảo để bạn có thể chỉ ra giao thức, cổng, dải IP nguồn mà có thể tiếp cận tới instance<br/>
+> 8.Elastic IP addresses: Địa chỉ IP cố định cho các máy chủ ảo<br/>
+> 9.VPCs (Virtual Private Cloud): Đám mây riêng ảo<br/>
 
 
 ##### Hướng dẫn tạo máy ảo Amazon EC2 trên AWS
@@ -254,10 +254,10 @@ Bấm button [ Next: Configure Instance Details ] để tiếp tục
 
 Bước  3: Cấu hình thông tin cơ bản của EC2 Instance
 
-1.Number of instances: Số lượng instance
-2.Network: Chọn VPC bạn đã tạo ở các bước trước đó, nếu chưa tạo bấm “Create new VPC”
-3.Subnet: Chọn Subnet bạn đã tạo, nếu chưa tạo bấm “Create new subnet”
-4.Auto-assign Public IP: Chọn Enable để được gán 1 địa chỉ Public IPv4 cho việc kết nối tới máy ảo
+1.Number of instances: Số lượng instance<br/>
+2.Network: Chọn VPC bạn đã tạo ở các bước trước đó, nếu chưa tạo bấm “Create new VPC”<br/>
+3.Subnet: Chọn Subnet bạn đã tạo, nếu chưa tạo bấm “Create new subnet”<br/>
+4.Auto-assign Public IP: Chọn Enable để được gán 1 địa chỉ Public IPv4 cho việc kết nối tới máy ảo<br/>
 
 Bấm button [ Add storage ] để tiếp tục
 
