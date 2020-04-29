@@ -271,7 +271,7 @@ Bấm button [ Next: Add Tags ] để tiếp tục
 
 Bước 5: Thêm tag để quản lý máy ảo một cách dễ dàng
 
-Mình thêm thêm 1 name cho máy ảo cho dễ nhớ.  Bấm [ Next: Configure Security Group ]
+Thêm 1 name cho máy ảo cho dễ nhớ.  Bấm [ Next: Configure Security Group ]
 
 ![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image33.png) <br/>
 
