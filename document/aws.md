@@ -242,7 +242,7 @@ Bước 1: Chọn “Amazon AMI“, các bạn cứ hiểu giống như là chú
 
 Ở đây mình chọn Amazon Linux 2 AMI
 
-![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image28.png) <br/>
+![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image29.png) <br/>
 
 Bước 2: Chọn “Instance Type”, Loại EC2 Instance tương ứng với tài nguyên sẽ được cấp phát cho máy chủ.
 
