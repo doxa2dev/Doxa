@@ -76,7 +76,7 @@ Introduction
 
 * Region
 
-> Region bản thân nó mang ý nghĩa là vùng, phạm vi và với resource điện đoán đám mây của Amazon được host tại nhiều nơi trên thế giới, thì region chỉ theo nghĩa đen về mặt vật lý là những địa danh trên thế giới. Vào thời điểm hiện tại thì trên toàn thế giới họ có khoảng 23 region chính và các vùng con (là những data center) bên trong chúng như hình bên dưới. Chuẩn bị sẽ có thêm vài region nữa. Mỗi region có thể là cung cấp một hoặc một số dịch vụ riêng như DB (Aurora), storage (S3), Batch ... 
+> Region có nghĩa là vùng, phạm vi chứa resource điện đoán đám mây của Amazon được host tại nhiều nơi trên thế giới, region về mặt vật lý là những địa danh trên thế giới. Vào thời điểm hiện tại thì trên toàn thế giới hiện có khoảng 23 region chính và các vùng con (là những data center) bên trong chúng như hình bên dưới. Chuẩn bị sẽ có thêm vài region nữa. Mỗi region sẽ cung cấp một hoặc một số dịch vụ riêng như DB (Aurora), storage (S3), Batch ... 
 
 [https://aws.amazon.com/about-aws/global-infrastructure/]
 
@@ -84,22 +84,22 @@ Introduction
 
 * AZ : Availability Zone
 
-> Mỗi region lại có một hoặc nhiều AZ, ví dụ như Tokyo region là vùng cung cấp dịch vụ AWS trên thế giới nhưng còn trong nó lại có 3 data center độc lập nhau, và họ gọi là AZ.
+> Mỗi region lại có một hoặc nhiều AZ, ví dụ như Tokyo region là vùng cung cấp dịch vụ AWS trên thế giới nhưng còn trong nó lại có 3 data center độc lập nhau,gọi là AZ.
 
 ![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image10.jpg) <br/>
 
-Do region có nhiều AZ nên khi mà thiết kết infra cho hệ thống thì có thể dùng chế độ Multi-AZ để nâng cao an toàn giảm thiểu tổn thất nếu chẳng may xảy ra cho hệ thống.
+Do region có nhiều AZ nên khi thiết kết cho hệ thống thì có thể dùng chế độ Multi-AZ để nâng cao an toàn giảm thiểu tổn thất nếu chẳng may xảy ra cho hệ thống.
 
 
 ##### 11. IAM Introduction
 
-* Tài khoản IAM là gì? 
+* IAM là gì? 
 
 > IAM (Identity and Access Management) là dịch vụ web giúp bạn kiểm soát truy cập tới tài nguyên AWS. Khi đó, chỉ có những tài khoản IAM mà bạn cho phép mới có thể truy cập hoặc có quyền sử dụng tài nguyên mà bạn chỉ định.
 
-* Vì sao nên sử dụng tài khoản IAM?
+* Vì sao nên sử dụng IAM?
 
-> Mặc định khi đăng ký AWS, tài khoản của bạn là tài khoản root, tài khoản có quyền cao nhất với tất cả tài nguyên trong hệ thống AWS. Vì vậy, nếu bạn không có nhu cầu sử dụng tất cả các dịch vụ của AWS thì các bạn nên đăng ký tài khoản IAM để giới hạn quyền truy cập tới tài nguyên cần thiết.
+> Mặc định khi đăng ký AWS, tài khoản của bạn là tài khoản root, tài khoản có quyền cao nhất với tất cả tài nguyên trong hệ thống AWS. Vì vậy, nếu ta không có nhu cầu sử dụng tất cả các dịch vụ của AWS thì ta nên tạo tài khoản IAM để giới hạn quyền truy cập tới tài nguyên cần thiết.
 
 * Một số lợi ích của IAM như sau:
 
@@ -112,14 +112,14 @@ Do region có nhiều AZ nên khi mà thiết kết infra cho hệ thống thì 
 
 1 – Tạo tài khoản IAM – AWS Management Console access
 
-Bước 1: Login vào AWS với tài khoản root của bạn (Tài khoản khi đăng ký AWS)
+Bước 1: Login vào AWS với tài khoản root (Tài khoản khi đăng ký AWS)
 
 Tìm kiếm dịch vụ có tên là IAM, và click vào kết quả tìm kiếm.
 
 ![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image11.png) <br/>
 
-Bước 2: Ở trang “Welcome to Identity and Access Management” sẽ cung cấp cho bạn tổng quan về tình trạng các tài khoản IAM của bạn như: Dường dẫn đăng nhập (Login Link), Số lượng User hiện tại, Số lượng Group hiện tại,… <br/>
-Để tiếp tục click vào liên kết “User” như hình bên dưới. Nó sẽ dẫn bạn tới trang quản lý tài khoản.
+Bước 2: Ở trang “Welcome to Identity and Access Management” sẽ cung cấp cho ta tổng quan về tình trạng các tài khoản IAM như: Đường dẫn đăng nhập (Login Link), Số lượng User hiện tại, Số lượng Group hiện tại,… <br/>
+Tiếp tục click vào liên kết “User” như hình bên dưới. Nó sẽ dẫn ta tới trang quản lý tài khoản.
 
 ![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image12.png) <br/>
 
@@ -132,8 +132,8 @@ Click [Add user] để tạo một tài khoản mới
 Bước 4: Nhập thông tin tài khoản
 
 – User name: Ở đây mình sử dụng User Name là “doxa1”
-– Access Type: Các bạn chọn “AWS Management Console access”. Chú ý một tài khoản có thể chọn cả 2 loại Access Type.
-– Console Password: Chọn “Custom password” để điền password của bạn vào.
+– Access Type: Mọi người chọn “AWS Management Console access”. Chú ý một tài khoản có thể chọn cả 2 loại Access Type.
+– Console Password: Chọn “Custom password” để điền password vào.
 – Require Password reset: Bỏ chọn trường này, nếu các bạn không muốn đổi password ở lần đăng nhập đầu tiên.
 
 Click button [Next: Permissions] để tiếp tục
@@ -144,19 +144,19 @@ Bước 5: Thiết lập quyền hạn cho tài khoản IAM
 
 Ở đây chúng ta lựa chọn đơn giản là “Attach existing policies directly” và chọn chính sách là “AdministratorAccess” để sao chép quyền của tài khoản root cho tài khoản của chúng ta.
 
-Tuy nhiên các bạn nên tìm hiểu thêm quyền hạn và tạo chính sách phù hợp hơn với nhu cầu sử dụng của bạn.
+Tuy nhiên nên tìm hiểu thêm quyền hạn và tạo chính sách phù hợp hơn với nhu cầu sử dụng.
 
 Click button [Nex: Reviews] để tiếp tục.
 
 ![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image16.png) <br/>
 
 
-Bước 6: Xác nhận lại thông tin tài khoản mà bạn đang tạo
-Nếu đúng như bạn mong muốn, click button [Create user] để tạo tài khoản
+Bước 6: Xác nhận lại thông tin tài khoản mà ta đang tạo
+Nếu đúng như mong muốn, click button [Create user] để tạo tài khoản
 
 ![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image17.png) <br/>
 
-Nếu nhận được thông báo như hình dưới thì bạn đã tạo thành công tài khoản cho mình rồi, click button [Close] để trở về giao diện quản lý tài khoản IAM
+Nếu nhận được thông báo như hình dưới thì ta đã tạo thành công tài khoản cho mình rồi, click button [Close] để trở về giao diện quản lý tài khoản IAM
 
 
 ![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image18.png) <br/>
@@ -164,17 +164,17 @@ Nếu nhận được thông báo như hình dưới thì bạn đã tạo thàn
 
 2 – Thay đổi đường dẫn login
 
-Mặc định đường dẫn login của bạn sẽ có dạng: https://123456789.signin.aws.amazon.com/console
+Mặc định đường dẫn login sẽ có dạng: https://123456789.signin.aws.amazon.com/console
 
-Với 123456789 là ID của tài khoản bạn. Đây là ví dụ của mình, còn thực tế nó là 1 dãy các số rất khó nhớ. Vì vậy mà chúng ta cần đổi sang một đường dấn Alias dễ nhớ hơn.
+Với 123456789 là ID của tài khoản. Vì vậy mà chúng ta cần đổi sang một đường dấn Alias dễ nhớ hơn.
 
 ![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image19.png) <br/>
 
 Truy cập tag Dashboard chọn Customize
-Sau đó nhập Alias cho tài khoản của bạn.
+Sau đó nhập Alias cho tài khoản.
 
 3 – Xóa tài khoản IAM
-Ở trang quản lý tài khoản -> Chọn tài khoản bạn muốn xóa -> Click button [Delete user]
+Ở trang quản lý tài khoản -> Chọn tài khoản ta muốn xóa -> Click button [Delete user]
 
 ![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image20.png) <br/>
 
@@ -213,8 +213,8 @@ b3.Kết quả add thành công user vào group
 
 * Amazon EC2 là gì?
 
-> Amazon EC2 (Amazon Elastic Compute Cloud) là các máy chủ đám mây có khả năng tính toán mở rộng trong môi trường đám mây AWS. Sử dụng Amazon EC2 giúp bạn phát triển và triển khai ứng dụng một cách nhanh chóng hơn, loại bỏ nhu cầu đầu tư vào phần cứng.<br/>
-Bạn có thể sử dụng Amazon EC2 để khởi tạo 1 hoặc nhiều máy chủ ảo, cấu hình bảo mật, mạng và quản lý lưu trữ. Amazon EC2 cho phép bạn tăng hoặc giảm quy mô theo yêu cầu, hoặc đối phó với sự tăng hoặc giảm đột biến đối với traffic, tài nguyên sử dụng.
+> Amazon EC2 (Amazon Elastic Compute Cloud) là các máy chủ đám mây có khả năng tính toán mở rộng trong môi trường đám mây AWS. Sử dụng Amazon EC2 giúp ta phát triển và triển khai ứng dụng một cách nhanh chóng hơn, loại bỏ nhu cầu đầu tư vào phần cứng.<br/>
+Ta có thể sử dụng Amazon EC2 để khởi tạo 1 hoặc nhiều máy chủ ảo, cấu hình bảo mật, mạng và quản lý lưu trữ. Amazon EC2 cho phép bạn tăng hoặc giảm quy mô theo yêu cầu, hoặc đối phó với sự tăng hoặc giảm đột biến đối với traffic, tài nguyên sử dụng.
 
 * Các tính năng của máy chủ Amazon EC2
 
@@ -231,12 +231,94 @@ Bạn có thể sử dụng Amazon EC2 để khởi tạo 1 hoặc nhiều máy 
 
 ##### Hướng dẫn tạo máy ảo Amazon EC2 trên AWS
 
+Bắt đầu: Ở giao diện quản lý Amazon EC2 ở địa chỉ: https://console.aws.amazon.com/ec2
+
+Bấm [ Lauch Instance ] để bắt đầu quá trình khởi tạo máy chủ EC2
+
+![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image28.png) <br/>
+
+Bước 1: Chọn “Amazon AMI“, các bạn cứ hiểu giống như là chúng ta chọn file iso để cài đặt HDH vậy.
 
 
+Ở đây mình chọn Amazon Linux 2 AMI
+
+![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image28.png) <br/>
+
+Bước 2: Chọn “Instance Type”, Loại EC2 Instance tương ứng với tài nguyên sẽ được cấp phát cho máy chủ.
+
+Loại nhỏ nhất là t2.nano với 1 vCPUs và 0.5 Memory. Mình chọn loại t2.micro cho tài khoản Free tier.
+
+Bấm button [ Next: Configure Instance Details ] để tiếp tục
+
+![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image30.png) <br/>
+
+Bước  3: Cấu hình thông tin cơ bản của EC2 Instance
+
+1.Number of instances: Số lượng instance
+2.Network: Chọn VPC bạn đã tạo ở các bước trước đó, nếu chưa tạo bấm “Create new VPC”
+3.Subnet: Chọn Subnet bạn đã tạo, nếu chưa tạo bấm “Create new subnet”
+4.Auto-assign Public IP: Chọn Enable để được gán 1 địa chỉ Public IPv4 cho việc kết nối tới máy ảo
+
+Bấm button [ Add storage ] để tiếp tục
+
+![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image31.png) <br/>
+
+Bước 4: Điều chỉnh dung lượng lưu trữ của Amazon EC2
+
+Bấm button [ Next: Add Tags ] để tiếp tục
+
+![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image32.png) <br/>
+
+Bước 5: Thêm tag để quản lý máy ảo một cách dễ dàng
+
+Mình thêm thêm 1 name cho máy ảo cho dễ nhớ.  Bấm [ Next: Configure Security Group ]
+
+![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image33.png) <br/>
+
+Bước 6: Cấu hình chính sách bảo mật Security Group
+
+Chọn “Select an existing security group” mà bạn đã tạo trước đó. Nếu chưa tạo thì lựa chọn “Create a new security group”
+
+![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image34.png) <br/>
+
+Bấm button [ Review and Launch ] để  review lại instance.
+
+Bước 7: Review lại các thông tin Instance
+
+Nếu ok, chúng ta bấm button [ Launch ] để tiếp tục
+
+![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image35.png) <br/>
+
+Một cửa sổ hiển thị để chọn Key pair mà ta đã tạo trước đó, hoặc tạo mới 1 Key pair
+
+![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image37.png) <br/>
+
+Tạo EC2 thành công
+
+![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image38.png) <br/>
+
+Kêt quả chúng ta đã tạo thành công máy chủ Amazon EC
+
+![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image39.png) <br/>
+
+Setting trạng thái cho máy chủ EC2
+
+![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image40.png) <br/>
 
 
+### 14. SSH Overview
 
+* SSH tới EC2 trong Linux and Mac
+* SSH tới EC2 trong window sử dụng putty
+* Sử dụng EC2 Instance Connect
 
+### SSH trên Window10
+
+![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image41.png) <br/>
+
+SSH thành công
+
+![](https://gitlab.com/trung-nb/public/-/raw/master/aws_image/image42.png) <br/>
 
 
 
